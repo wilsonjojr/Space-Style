@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Space Style</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+    </style>
+    
+  </head>
+  <body id="minhaPagina" data-spy="scroll">
+
+     <!--Criação da barra de navegação fixa -->
+    <nav id="navbar" class="navbar navbar-default navbar-fixed-top">
+      <!--Criação do container-->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--Criação de um botão para deixar a barra de navegação dobravel-->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#minhaPagina">SS</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#sobre">Sobre nós </a></li>
+            <li><a href="#pecas">Peças</a></li>
+            <li><a href="#duvidas">Dúvidas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Home do site-->
+    <div id="home" class="container-fluid text-center">
+      <h1 id ="titulo">Space Style</h1><br>
+      <h3 id ="subtitulo">Lorem ipsum</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum lorem sit amet sagittis hendrerit.</p>
+    </div>
+   
+    <!--Seção 1 - Sobre nós-->
+    <div id = "sobre" class="container-fluid">
+      <div class="row">
+        <div class="col-sm-8">
+        <h2>Sobre nós </h2>
+          <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum lorem sit amet sagittis hendrerit. Nullam et malesuada ligula, eu pretium ligula. Aliquam gravida ligula sit amet facilisis bibendum. Proin tristique diam vitae nibh luctus, ac luctus magna semper. Vestibulum non pulvinar est. Donec at viverra enim, ac fermentum quam. Proin suscipit urna nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam efficitur leo nec dui blandit condimentum.</p>
+          <br>
+        
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum lorem sit amet sagittis hendrerit. Nullam et malesuada ligula, eu pretium ligula. Aliquam gravida ligula sit amet facilisis bibendum. Proin tristique diam vitae nibh luctus, ac luctus magna semper. Vestibulum non pulvinar est. Donec at viverra enim, ac fermentum quam. Proin suscipit urna nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam efficitur leo nec dui blandit condimentum.</p>
+        </div>
+        <div class="col-sm-4">
+        <img src="imagens/ilustracao.jpg" class="img-responsive" alt="Traje ilustrativo">
+        </d>
+      </div>
+    </div>
+    </div>
+    <!--Seção 2 - Principais peças-->
+    <div id = "pecas" class="container-fluid text-center">
+    <h2>Principais peças </h2>
+    <br><br>
+    <!--Criação do carrossel-->
+      <div id="meuCarousel" class="carousel slide" data-ride="carousel">
+        <!--Indicadores dos slides-->
+        <ol class="carousel-indicators">
+          <li data-target="#meuCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#meuCarousel" data-slide-to="1"</li>
+          <li data-target="#meuCarousel" data-slide-to="2" ></li>
+          <li data-target="#meuCarousel" data-slide-to="3"</li>
+        </ol>
+        <!--Definindo um conteudo para cada slide-->
+        <div class="carousel-inner">
+          <!--Imagem 1-->
+          <div class="item active">
+            <img src="imagens/trajes1.jpg" class="img-responsive" alt="Trajes"  width="1534" height="750"> 
+            <div class="carousel-caption">
+              <h3 id="legenda" >Curabitur aliquam</h3>
+              <p id="legenda">Integer sed facilisis</p>
+            </div>
+          </div>
+          <!--Imagem 2-->
+          <div class="item">
+            <img src="imagens/trajes2.jpg" class="img-responsive" alt="Trajes" width="1534" height="750"> 
+            <div class="carousel-caption">
+              <h3 id="legenda">Praesent sodales</h3>
+              <p id="legenda">Nunc suscipit ullamcorper<p>
+            </div>
+          </div>
+           <!--Imagem 3-->
+          <div class="item">
+            <img src="imagens/trajes3.jpg" class="img-responsive" alt="Trajes" width="1534" height="750"> 
+            <div class="carousel-caption">
+              <h3 id="legenda">Aenean efficitur</h3>
+              <p id="legenda">Etiam ac turpis</p>
+            </div>
+          </div>
+           <!--Imagem 4-->
+          <div class="item">
+            <img src="imagens/trajes4.jpg" class="img-responsive" alt="Trajes" width="1534" height="750"> 
+            <div class="carousel-caption">
+              <h3 id="legenda">Aliquam aliquet</h3>
+              <p id="legenda">Suspendisse vehicula elementum facilisis</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Botões para a esquerda e direita--> 
+        <a class="left carousel-control" href="#meuCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="right carousel-control" href="#meuCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Proximo</span>
+        </a>
+      </div>
+    </div>
+
+    <!--Seção 3 - Duvidas-->
+    <div id = "duvidas" class="container-fluid text-center">
+      <h2>Dúvidas frequentes </h2>
+      <br><br>
+      <div class="panel-group" id="accordion">
+        <!--Dúvida 1-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id ="duvida" data-toggle="collapse" data-parent="#accordion" href="#collapse1">Lorem ipsum?</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">Lorem ipsum dolor sit amet.
+            </div>
+          </div>
+        </div>
+        <!--Dúvida 2-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id ="duvida" data-toggle="collapse" data-parent="#accordion" href="#collapse2">Aliquam at eleifend?</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">Nullam quis ex a urna imperdiet.
+            </div>
+          </div>
+        </div>
+        <!--Dúvida 3-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id ="duvida" data-toggle="collapse" data-parent="#accordion" href="#collapse3">Lorem ipsum dolor sit amet, consectetur adipiscing.</a>
+            </h4>  
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+          </div>
+        </div>
+        <!--Dúvida 4-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id ="duvida" data-toggle="collapse" data-parent="#accordion" href="#collapse4">In tellus magna, imperdiet?</a>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">Nam sed magna dictum libero pellentesque vestibulum. Ut vehicula dui aliquam interdum feugiat.
+            </div>
+          </div>
+        </div>
+        <!--Dúvida 5-->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a id ="duvida" data-toggle="collapse" data-parent="#accordion" href="#collapse5">Proin ullamcorper accumsan neque eget egestas. Integer at.</a>
+            </h4>
+          </div>
+          <div id="collapse5" class="panel-collapse collapse">
+            <div class="panel-body">Aliquam vulputate nunc at risus blandit, eget.
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <!--Seção 4 - Formulario para contato-->
+    <div id = "contato" class="container-fluid">
+      
+      <h2>Contato </h2>
+      <br>
+      <!--Informações da empresa -->
+       <div class="row">
+        <div class="col-sm-4">
+          <p>Contate a gente e retonaremos o mais rapido possivel.</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span> Ceará, BR</p>
+          <p><span class="glyphicon glyphicon-phone"></span> +00 (xx) 99999-9999</p>
+          <p><span class="glyphicon glyphicon-envelope"></span> exemplodeemail@email.com</p>
+        </div>
+        <!--Area de texto para inserir o nome-->
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-10 form-group">
+              <input type = "text" class ="form-control" id = "name" placeholder="Nome">
+            </div>
+          </div>
+        </div>
+        <!--Area de texto para inserir o email-->
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-10 form-group">
+              <input type = "email" class ="form-control" id = "email" placeholder="Email">
+            </div>
+          </div>
+        </div>
+        <!--Area de texto para inserir um comentario-->
+        <div class="col-sm-8">
+          <div class="row">
+            <div class="col-sm-10 form-group">
+              <textarea class="form-control" id="comments" name="comments" placeholder="Comentario" rows="5"></textarea>
+              <br>
+              <!--Botão para enviar-->
+              <button type="button" class="btn pull-right">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="espaco" class="container-fluid text-center">
+      
+    </div>
+    
+    <!--Rodapé-->
+    <footer id = "rodape" class="text-center">
+      <div class="row">
+        <div class="col-sm-3">
+          <!--Conteúdo do Rodapé-->
+          <h2>Nullam arcu</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum lorem sit amet sagittis hendrerit.</p>
+           <p> Nullam et malesuada ligula, eu pretium ligula. Aliquam gravida ligula sit amet facilisis bibendum.</p>
+          <br>
+          <p>Proin tristique diam vitae nibh luctus, ac luctus magna semper. Vestibulum non pulvinar est. Donec at viverra enim, ac fermentum quam. Proin suscipit urna nunc.</p>
+          <br>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam efficitur leo nec dui blandit condimentum.</p>
+        </div>
+
+        <div class="col-sm-3">
+          <h2>Integer eu</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum lorem sit amet sagittis hendrerit.</p>
+           <p> Nullam et malesuada ligula, eu pretium ligula. Aliquam gravida ligula sit amet facilisis bibendum.</p>
+          <br>
+          <p>Proin tristique diam vitae nibh luctus, ac luctus magna semper. Vestibulum non pulvinar est. Donec at viverra enim, ac fermentum quam. Proin suscipit urna nunc.</p>
+          <br>
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam efficitur leo nec dui blandit condimentum.</p>
+        </div>
+
+        <div class="col-sm-3">
+          <h2>Phasellus ac</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum lorem sit amet sagittis hendrerit.</p>
+           <p> Nullam et malesuada ligula, eu pretium ligula. Aliquam gravida ligula sit amet facilisis bibendum.</p>
+          <br>
+        </div>
+      </div>
+      <!--Botão para o topo-->
+      <a class="up-arrow" href="#minhaPagina" data-toggle="tooltip" title="Topo">
+        <span class="glyphicon glyphicon-triangle-top"></span>
+      </a>
+      <br><br>      
+    </footer>
+    
+    <script src="script.js"></script>
+    
+  </body>
+</html>
