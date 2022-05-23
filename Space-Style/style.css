@@ -1,0 +1,111 @@
+
+
+/*Propriedades da barra de navegação*/
+#navbar{
+    margin-bottom: 0;
+    background-color:#010337;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+  }
+.navbar li a, .navbar .navbar-brand {
+    color: #ffffff !important;
+  }
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #010337 !important;
+    background-color: #fff !important;
+  }
+
+/*Propriedades do home*/
+#home{
+  padding: 100px 25px;
+  color:#ffffff;
+  background-image: url('imagens/espaco1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/*Propriedades da seção "Sobre nós"*/
+#sobre {
+  padding: 60px 50px;
+  color: #010337;
+  background-color: #ffffff;
+}
+
+/*Propriedades da seção "Principais peças"*/
+#pecas {
+  padding-top: 60px;
+   padding-bottom: 60px;
+   color: #ffffff;
+  background-color: #010337;
+  }
+
+#legenda {
+   color: #ffffff; 
+}
+
+/*Oculta o texto do slide quando a tela teive menos de 600px de largura */
+ @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+
+textarea {
+    resize: none;
+  }
+
+/*Propriedades da seção "Dúvidas frequentes"*/
+#duvidas {
+  padding: 60px 50px;
+  
+  color: #010337;
+  background-color: #f4f0f0; 
+}
+#duvida {
+  color: #010337;
+}
+
+/*Propriedades da seção "Contato"*/
+#contato {
+  padding: 60px 50px;
+  
+  color: #ffffff;
+  background-color: #010337;
+}
+/*Propriedades do botão"*/
+.btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #010337;
+    border-radius: 0;
+    transition: .2s;
+  }
+
+.btn:hover, .btn:focus {
+  color: #ffffff;
+  background-color: #010337;
+  border: 1px solid #ffffff;   
+  }
+
+#espaco {
+  padding: 100px 25px;
+  background-image: url('imagens/espaco2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+/*Propriedades do rodapé*/
+#rodape {
+  padding: 60px 50px;
+  color: #010337;
+  background-color: #ffffff;
+}
+
+
+
